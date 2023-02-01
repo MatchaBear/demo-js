@@ -9,7 +9,8 @@ calculateButton.addEventListener("click", function (event) {
   const length = parseFloat(lengthInput.value);
   const width = parseFloat(widthInput.value);
   result.innerHTML = length * width;
-  const addToList = document.createTextNode(li.addToList); // intention: to write below the submitted (id = data-entered)
+  const addToHistory = document.createElement("li");
+  addToHistory.append(); // intention: to write below the submitted (id = data-entered)
 });
 
 document.createTextNode(length); // intention: to write length into the dom
