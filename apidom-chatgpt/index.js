@@ -10,6 +10,9 @@ calculateButton.addEventListener("click", function (event) {
   result.innerHTML = length * width;
 });
 
+document.createTextNode(length);
+document.createTextNode(width);
+
 const callWs = function () {
   // The Endpoint URL
   const url = "https://jsonplaceholder.typicode.com/posts/1";
