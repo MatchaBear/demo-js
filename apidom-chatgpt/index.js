@@ -19,12 +19,8 @@ calculateForm.addEventListener("submit", function (event) {
   resultWidth.innerHTML = width;
   resultArea.innerHTML = area;
 
-  addToHistory(area);
-});
-
-function addToHistory(historyItem) {
   const historyItemElement = document.createElement("li");
-  historyItemElement.innerHTML = historyItem;
+  historyItemElement.innerHTML = area;
 
   historyList.append(historyItemElement);
-}
+});
