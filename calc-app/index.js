@@ -2,19 +2,19 @@ function runCalculatorApp(operator, firstNumber, secondNumber) {
   if (operator == "+") {
     const result = firstNumber + secondNumber;
     const formattedResult = `${firstNumber} + ${secondNumber} = ${result}`;
-    window.alert(formattedResult);
+    return window.alert(formattedResult);
   } else if (operator == "-") {
     const result = firstNumber - secondNumber;
     const formattedResult = `${firstNumber} - ${secondNumber} = ${result}`;
-    window.alert(formattedResult);
+    return window.alert(formattedResult);
   } else if (operator == "*") {
     const result = firstNumber * secondNumber;
     const formattedResult = `${firstNumber} × ${secondNumber} = ${result}`;
-    window.alert(formattedResult);
+    return window.alert(formattedResult);
   } else if (operator == "/") {
     const result = firstNumber / secondNumber;
     const formattedResult = `${firstNumber} ÷ ${secondNumber} = ${result}`;
-    window.alert(formattedResult);
+    return window.alert(formattedResult);
   } else {
     return window.alert("Please enter correct operator");
   }
