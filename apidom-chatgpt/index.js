@@ -4,11 +4,12 @@ const widthInput = document.querySelector("#width");
 const result = document.querySelector("#result");
 
 calculateButton.addEventListener("click", function (event) {
+  // callback function ?
   event.preventDefault();
   const length = parseFloat(lengthInput.value);
   const width = parseFloat(widthInput.value);
   result.innerHTML = length * width;
-  const addToList = document.createTextNode(li.addToList);
+  const addToList = document.createTextNode(li.addToList); // intention: to write below the submitted (id = data-entered)
 });
 
 document.createTextNode(length); // intention: to write length into the dom
