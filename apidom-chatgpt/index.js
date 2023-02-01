@@ -14,6 +14,10 @@ document.createTextNode(length);
 document.createTextNode(width);
 
 document.createTextNode(callKontenbase());
+const { user, token, error } = await kontenbase.auth.login({
+  email: "bernhard.hustomo@gmail.com",
+  password: "P@ssw0rd",
+});
 
 function callKontenbase() {
   const url =
