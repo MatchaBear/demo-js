@@ -13,6 +13,13 @@ calculateButton.addEventListener("click", function (event) {
 document.createTextNode(length);
 document.createTextNode(width);
 
+document.createTextNode(callKontenbase());
+
+function callKontenbase() {
+  const url =
+    "https://api.kontenbase.com/query/api/v1/57d41d85-788d-4b3d-a289-267f237bf13d";
+}
+
 const callWs = function () {
   // The Endpoint URL
   const url = "https://jsonplaceholder.typicode.com/posts/1";
