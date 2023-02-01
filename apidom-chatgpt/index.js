@@ -8,22 +8,24 @@ calculateButton.addEventListener("click", function (event) {
   const length = parseFloat(lengthInput.value);
   const width = parseFloat(widthInput.value);
   result.innerHTML = length * width;
+  const addToList = document.createTextNode(li.addToList);
 });
 
-document.createTextNode(length);
-document.createTextNode(width);
+document.createTextNode(length); // intention: to write length into the dom
+document.createTextNode(width); // intention: to write width into the dom
 
 document.createTextNode(callKontenbase());
-const { user, token, error } = await kontenbase.auth.login({
-  email: "bernhard.hustomo@gmail.com",
-  password: "P@ssw0rd",
-});
+// const { user, token, error } = await kontenbase.auth.login({
+//   email: "bernhard.hustomo@gmail.com",
+//   password: "P@ssw0rd",
+// });
 
 function callKontenbase() {
   const url =
     "https://api.kontenbase.com/query/api/v1/57d41d85-788d-4b3d-a289-267f237bf13d";
 }
 
+// from chatgpt on how to call api
 const callWs = function () {
   // The Endpoint URL
   const url = "https://jsonplaceholder.typicode.com/posts/1";
