@@ -20,7 +20,8 @@ calculateForm.addEventListener("submit", function (event) {
   resultArea.innerHTML = area;
 
   const historyItemElement = document.createElement("li");
-  historyItemElement.innerHTML = area;
 
   historyList.append(historyItemElement);
+
+  historyItemElement.innerHTML = "Area = " + area;
 });
